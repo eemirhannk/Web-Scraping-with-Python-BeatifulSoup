@@ -1,0 +1,243 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\begin{document}
+\title{Kocaeli Üniversitesi\\
+\Large{Bilgisayar Mühendisliği Bölümü\\
+Programlama Laboratuvarı II\\
+Proje III}}
+
+
+\author{\IEEEauthorblockN{\textit{\Large{Emirhan Koç}}}\\
+\IEEEauthorblockA{\textit{\Large{200202068}}}
+\and
+\IEEEauthorblockN{\textit{\Large{Mustafa Kahveci}}}\\
+\IEEEauthorblockA{\textit{\Large{200202036}}}
+}
+
+\maketitle
+
+\section{GİRİŞ}
+\large{Proje Python dilinde Microsoft Visual Studio Code IDE’si kullanılarak yazılmıştır.\\\\
+
+Proje tasarlanırken HTML,CSS,Django ve veritabanları ile ilgili teknik bilgiler araştırılmış ve gerekli algoritmaların kurulmasında karar kılınmıştır.\\\\
+
+Kendinize ait bir E-ticaret sitesi oluşturmalısınız ve bu site Admin tarafından güncellenebilir olmalıdır.\\\\
+
+Sitede yapılacak değişiklerde ;\\
+\begin{itemize}
+\item Bir notebook ürünün fiyatının değiştirilmesi 
+\item Notebook ürünü ait bir kaydın kaldırılması 
+\item Yeni notebook ürünün eklenmesi
+\item Notebook ürünün puanında değişiklik yapılması 
+\item Ürün bilgilerinin güncellenmesi\\
+\end{itemize}
+
+bilgilerin web scraping ile çekilmesi gerekmektedir. Alınan tüm bu değişikler farklı sitelerdeki ürünlerin listelendiği diğer web sitesinde anlık olarak gösterilmelidir.\\
+
+Ürün bilgisinin gösterildiği web sayfasında tüm notebook ürünlerinin listelenmesi ve ürün bilgilerinin yer aldığı ana başlıklarının oluşturulması gerekmektedir. Bu başlığa tıklayınca ürün hakkında bilgilerin (fiyat bilgileri dahil) olduğu sayfa açılmalıdır.\\\\\\\\
+Ayrıca ürünlerin listelendiği sayfadaki E-ticaret linki üzerine tıklayınca ürünün bu E-ticaret sitesindeki sayfasına kullanıcı yönlendirilmelidir.\\\\
+Dinamik arama ile (yukarıda istenilen tüm arama kriterleri dahil olacak şekilde) Asus ..vb modele göre arama işleminin yapılması\\\\
+
+Dinamik arama ile (yukarıda istenilen tüm arama kriterleri dahil olacak şekilde) hepsiburada ..vb E-ticaret sitelerinin aranması\\\\
+
+Ürün bilgilerinin gösterildiği web sayfası üzerinde Filtreleme işleminin yapılması\\\\
+
+Fiyat bilgisine göre küçükten büyüğe veya büyükten küçüğü sıralama ayrıca puanı yüksek olan ürüne göre sıralama işleminin yapılması\\\\
+
+Sizin oluşturacağınız E- Ticaret sitesine kayıtlı olan bir ürünün aynı bilgileri ile kayıt edilmeli ve veritabanında Duplicate Kontrolü yapılmalıdır.\\\\
+
+Sizin oluşturacağınız E- Ticaret sitesinde iki farklı kayıt işleminin yapılması ve Near Duplicate kontrolünün yapılması\\\\
+
+
+
+\section{YÖNTEM}
+- Başlangıçta proje detaylı bir şekilde analiz edildi.\\\\
+
+- Python dili,Django,HTML ve CSS hakkında gerekli araştırmalar yapıldı.\\\\
+
+- Yapılması istenen web siteleri ve veritabanları oluşturuldu.\\\\
+
+- Oluşturulan web siteleri ve veritabanları :\\\\\\\\\\
+
+\includegraphics[width=18cm,height=10cm]{site.png}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+\includegraphics[width=18cm,height=10cm]{site2.png}\\\\\\\\\\\
+
+\includegraphics[width=18cm,height=10cm]{veritabano.png}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+\section{YALANCI KOD}
+\begin{itemize}
+\item import product.\\\\
+
+\item veritabanına bağlanmak için ilgili kütüphane ekle.\\\\
+
+\item import random\\\\
+
+\item from xml.sax.xmlreader import AttributesImpl.\\\\
+
+\item import numpy as np\\\\
+
+\item import requests.\\\\
+
+\item from bs4 import BeautifulSoup.\\\\
+
+\item import sqlite3.\\\\
+
+\item bağlan database.\\\\
+
+\item tanımla pages.\\\\
+
+\item tanımla liste\\\\
+
+\item tanımla requests.\\\\
+
+\item tanımla soup.\\\\
+
+\item tanımla products.\\\\
+
+\item tanımla headers.\\\\
+
+\item oluştur döngü.\\\\
+
+\item tanımla puan.\\\\
+
+\item tanımla flink.\\\\
+
+\item tanımla ptitle.\\\\
+
+\item tanımla a.\\\\
+
+\item tanımla price.\\\\
+
+\item tanımla detail.\\\\
+
+\item parçala detail.\\\\
+
+\item tanımla tdetails\\\\
+
+\item Constructor oluştur.\\\\
+
+\item tanımla name.\\\\
+
+\item oluştur döngü.\\\\
+
+\item bastır siteIsmi\\\\   
+
+\item bastır urunLink.\\\\
+
+\item bastır marka.\\\\
+
+\item aktar liste[].\\\\
+
+\item oluştur try-except.\\\\
+
+\item bastır urunModel.\\\\
+
+\item aktar liste[].\\\\
+
+\item bastır urunPuan.\\\\
+
+\item aktar liste[].\\\\
+
+\item olustur try-except.\\\\
+
+\item bastır urunFiyat.\\\\
+
+\item aktar liste[].\\\\
+
+\item olustur döngü.\\\\
+
+\item tanımla cart.\\\\
+
+\item tanımla curt.\\\\
+
+\item oluştur iç içe if bloğu.\\\\
+
+\item gereksiz bilgileri sil.\\\\
+
+\item aktar liste[].\\\\
+
+\item bastır cart-curt\\\\
+
+\item database tanımla.\\\\
+
+\item tanımla sql.\\\\
+
+\item tanımla sayac.\\\\
+
+\item tanımla flag.\\\\
+
+\item olustur for döngüsü.\\\\
+
+\item tanımla if.\\\\
+
+\item bastır bağlantı başarılı.\\\\
+
+\item oluştur try-except.\\\\
+
+\item bağlan database.\\\\
+
+\item tanımla degerler.\\\\
+
+\item tanımla cur:\\\\
+
+\item execute cur.\\\\
+
+\item tanımla con.\\\\
+
+\item commit con.\\\\
+
+\item flag = false.\\\\
+
+
+
+
+
+
+
+
+\\\\\\\\
+\end{itemize}
+
+\section{DENEYSEL SONUÇLAR}
+
+Yapılan işlemler ve gerçekleştirilien algoritmalar sonucunda ortaya çıkan sonuçlar şu şekildedir :\\
+
+- Metodların düzenlice işlenmesi için kullanılan tabloların classları oluşturulması fark edildi.\\
+
+- Veritabanına sürekli bağlanma gereği duyulduğunda veritabanı bağlama işlemleri ayrı bir classta oluşturuldu ve gerektiğinde çağrıldı.\\
+
+- Yapılan işlemler sayesinden isterlerin gerçeklenmesi sağlandı.\\
+
+
+
+
+\section{SONUÇ}
+
+Yapılan işlemler sonucunda bizden istenilen web scraping başarılı bir şekilde tamamlanmıştır ancak veritabanına aktarma sırasında veri düzensizliğinden kaynaklı olarak hatalar alınmaktadır.Veritabanında yaşanan düzensizlik sebebiyle web sitesinde de bilgiler isterlerde istenen şekilde gösterilememektedir.\\\\
+\section{KAYNAKÇA}
+- https://www.udemy.com/course/python-django-dersleri/\\\\
+
+- https://www.youtube.com/watch?v=hbx39adciac&t=1326s\\\\
+
+- https://www.sadikturan.com/python-dersleri\\\\
+
+- https://www.sadikturan.com/python-django-dersleri\\\\
+
+- https://www.djangoproject.com/\\\\
+
+- https://www.youtube.com/watch?v=QAVoXJtQ9QM\\\\
+
+- https://www.youtube.com/watch?v=qW92hLp2VLc&list=PLXuv2PShkuHzrqh-_ZYuDcHZcoZfeAnad\\\\
+
+- https://www.youtube.com/watch?v=tRSHp8jsZdw&t=162s\\\\
+
+- https://www.youtube.com/watch?v=ZHSXaFfx84I\\\\
+
+- https://www.youtube.com/watch?v=T4EXSBMicBY&list=PLz2cqWVPJE63a_vGcA2whdCqvM2njdqvu\\
+
+}
+\end{document}

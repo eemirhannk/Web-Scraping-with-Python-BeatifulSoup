@@ -1,0 +1,258 @@
+{% extends 'notebook/base.html' %}
+{% load static %}
+
+{% block page_title %}
+notebooklar
+{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-3">
+            <h5>MARKA</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  ACER
+                </label>
+              </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  HUAWEI
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  HP
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  MONSTER
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  LENOVA
+                </label>
+              </div>
+              <hr>
+              <h5>FİYAT</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  0 TL - 9.999 TL
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    10.000 TL - 19.999 TL
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    20.000 TL - 29.999 TL
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    30.000 TL - 39.999 TL
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    40.000 TL - max. TL
+                </label>
+              </div>
+              <hr>
+              <h5>İŞLETİM SİSTEMİ</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  LİNUX
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  CHROME OS
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  WİNDOWS 10
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  WİNDOWS 11
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  DOS
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  FREEDOS
+                </label>
+              </div>
+              <hr>
+              <h5>RAM</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  8
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  16
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  32
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  64
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  128
+                </label>
+              </div>
+              <hr>
+              <h5>DİSK BOYUTU</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  64
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  128
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  256
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  500
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  512
+                </label>
+              </div>
+              <hr>
+              <h5>DİSK TÜRÜ</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  SSD
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  HDD
+                </label>
+              </div>
+              <hr>
+              <h5>EKRAN BOYUTU</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  14
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  15,6
+                </label>
+              </div>
+              
+              
+
+
+              
+
+              
+              
+        </div>
+        <div class="col-9">
+            <div class="row">   
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      SIRALAMA ÖLÇÜTÜ
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{% url 'min' %}">Ucuzdan pahalıya sırala</a></li>
+                      <li><a class="dropdown-item" href="{% url 'max' %}">Pahalıdan ucuza sırala</a></li>
+                      <li><a class="dropdown-item" href="{% url 'puan' %}">Puana göre sırala</a></li>
+                    </ul>
+                  </div>
+                  {% for notebook in notebooks %}
+                  <div class="col-4">
+                          <div class="card mb-2" style="width:320px;">
+                            <br>
+                          <img src="{% static 'img/'|add:notebook.resim %}" class="card-img-top" alt="..." style="width:300px;height:200px;">
+                          <hr>
+                          <div class="card-body">
+                            <h5 class="card-title">{{ notebook.marka }} {{ notebook.model }} {{ notebook.modelNo }}</h5>
+                            <p class="card-text">
+                              <p>İşletim Sistemi : {{ notebook.isletimSistemi }}</p>
+                              <p>İşlemci Tipi : {{ notebook.islemciTipi }}</p>
+                              <p>İşlemci Nesli : {{ notebook.islemciNesli }}</p>
+                              <p>Ram : {{ notebook.ram }}</p>
+                              <p>Disk Boyutu : {{ notebook.diskBoyutu }}</p>
+                              <p>Disk Türü : {{ notebook.diskTuru }}</p>
+                              <p>Ekran Boyutu : {{ notebook.ekranBoyutu }}</p>
+                              <p>Puan : {{ notebook.puan }}</p>
+                              <h5 style="color: orangered;">Fiyat : {{ notebook.fiyat }}</h5>
+                            </p>
+                            <a href="{% url 'details' notebook.id %}" class="stretched-link"></a>
+                          </div>
+                          </div>
+                  </div>
+                  {% endfor %}
+                    </div>
+                  </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

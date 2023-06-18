@@ -1,0 +1,35 @@
+{% extends 'notebook/base.html' %}
+{% load static %}
+
+{% block page_title %}
+Notebook-details
+{% endblock %}
+
+{% block content %}
+<br><br><br>
+  <div class="container">
+    <div class="card-group">
+      <div class="card">
+        <div class="card-body text-center">
+            <img src={ % notebook.resim % } class="card-img-top" alt="..." style="width:600px;height:450px;">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body text-center">
+            <h2 class="featurette-heading">{{ notebook.marka }} {{ notebook.model }} {{ notebook.modelNo }}</h2>
+            <p>İşletim Sistemi : {{ notebook.isletimSistemi }}</p>
+            <p>İşlemci Tipi : {{ notebook.islemciTipi }}</p>
+            <p>İşlemci Nesli : {{ notebook.islemciNesli }}</p>
+            <p>Ram : {{ notebook.ram }}</p>
+            <p>Disk Boyutu : {{ notebook.diskBoyutu }}</p>
+            <p>Disk Türü : {{ notebook.diskTuru }}</p>
+            <p>Ekran Boyutu : {{ notebook.ekranBoyutu }}</p>
+            <p>Puan : {{ notebook.puan }}</p>
+            <button type="button" class="btn btn-success">Sepete Ekle</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
